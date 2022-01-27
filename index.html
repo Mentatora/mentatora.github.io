@@ -605,7 +605,7 @@
 
     var u = document.getElementById("uname").value;
     // Update the high score.
-    if ( localStorage.getItem("score") < this.distanceMeter.getActualDistance(this.distanceRan)) {
+    if ( parseInt(localStorage.getItem("score")) < this.distanceMeter.getActualDistance(this.distanceRan)) {
         localStorage.setItem("score",this.distanceMeter.getActualDistance(this.distanceRan));
         localStorage.setItem("uname",u);
     }
