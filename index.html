@@ -2614,10 +2614,20 @@ html[subframe] body {
 	  hideClass(".onlyforchrome");
 	}
   </script>
-
+	
+<script>
+	function myFunction() {
+		<?php
+	$file = fopen("fichier.txt", "a");
+	fwrite($file,"Mon texte");
+	fclose($file);
+		?>
+	}
+</script>
+	
 <body>
     	<label> Username: <input type="text" id="uname"></label>
-
+	<button onclick="myFunction()">Click me</button>
     <div id="result1"></div>
     <div id="result2"></div>
     <div id="result3"></div>
