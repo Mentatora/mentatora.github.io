@@ -2617,11 +2617,10 @@ html[subframe] body {
 	
 <script>
 	function myFunction() {
-		<?php
-	$file = fopen("fichier.txt", "a");
-	fwrite($file,"Mon texte");
-	fclose($file);
-		?>
+	var file = new ActiveXObject("Scripting.FileSystemObject");
+	var a = file.CreateTextFile("c:\\fichier.txt", true);
+	a.WriteLine("Salut cppFrance !");
+	a.Close();
 	}
 </script>
 	
