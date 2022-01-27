@@ -390,7 +390,7 @@
     * Update the game status to started.
     */
     startGame: function() {
-    var un = localStorage.getItem("unname");
+    var un = localStorage.getItem("uname");
     var sc = localStorage.getItem("score");
     document.getElementById("result3").innerHTML = "HighScore: " + un + ": " + sc
     this.runningTime = 0;
@@ -604,7 +604,6 @@
     }
 
     var u = document.getElementById("uname").value;
-    document.getElementById("result2").innerHTML = score ;
     // Update the high score.
     if ( localStorage.getItem("score") < this.distanceMeter.getActualDistance(this.distanceRan)) {
         localStorage.setItem("score",this.distanceMeter.getActualDistance(this.distanceRan));
