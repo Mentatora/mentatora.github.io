@@ -1,4 +1,21 @@
 <html>
+<!--  d=data.frame(UMI = do.call(paste0, expand.grid(rep(str_split("0123456789", ""), 4))))
+
+d$count=0
+for (i in 1:nrow(d)) {
+  x=runif(1,0,1)
+  if(x<0.5){
+    d$count[i]=2
+  }
+  else{
+    d$count[i]=1
+  }
+}
+
+d=d %>% uncount(count)
+
+t = sample(d$UMI,14885,replace = F) %>% as_tibble()
+t %>% write_tsv("d.tsv") -->
   <head>
     <title> Bernard's note ! </title>
 5064
