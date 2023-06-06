@@ -291,17 +291,14 @@ button,
 </style>
 
 <script>
-	function ASCIISuma() {
-	    let array = document.getElementById("Answer").value;
-	    let suma = 0;
-	    for(let i = 0; i < array.length; i++) {
-	        for ( let j=0; j < array[i].length; j++ ) {
-	            let char_code = array[i].charCodeAt(j);
-	            suma += char_code;
-	         }
-	      }
-	    }
-	 document.getElementById("answer2").innerHTML = "suma" ;
+	function ASCIISuma3() {
+	    let s = document.getElementById("Answer").value;
+	    let charCodeArr = [];
+	for(let i = 0; i < s.length; i++){
+    		let code = s.charCodeAt(i);
+    		charCodeArr.push(code);
+}		
+	document.getElementById("answer2").innerHTML = charCodeArr ;
 	}
 </script>
 	
@@ -342,7 +339,7 @@ button,
 	
    <div id="result2" class="wrapper">
     	<label> Answer: <input type="text" id="Answer"></label>
-      <button onclick="ASCIISuma2()">Submit</button>
+      <button onclick="ASCIISuma3()">Submit</button>
     </div>
     <div id="answer2" class="wrapper"></div>
 </body>
