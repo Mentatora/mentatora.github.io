@@ -342,62 +342,12 @@ while (true) {
 }
 }
 </script>
-<script>
-	function c2() {
-		var input = document.getElementById("Place").value;
-		if (input ==  "marengo"){
-		document.getElementById("answer2").innerHTML =  "The store is almost close but thanks ! Bob is so stressed that he forgot his card code, fortunately he has a list with all the possible codes with a note: --my code is the only one which is not present in this list--. (https://mentatora.github.io/) You can't abandon him so close ";
-		}
-		else {
-			document.getElementById("answer2").innerHTML = "I can start writing it by hand..." ;
-		}
-	}
-</script>
-
-<script>
-	function c3() {
-		var input = document.getElementById("Number").value;
-		if (input == 2278){
-		document.getElementById("answer3").innerHTML = "You did it ! Thank you for helping Bob! In the panic Bob forgot the time of his defense, help him and Bob will have everything he needs : <br> 111111101000101111111 <br> 100000101101001000001 <br> 101110101111101011101 <br> 101110101010101011101 <br> 101110100111101011101 <br> 100000101010101000001 <br> 111111101010101111111 <br> 000000000000000000000 <br> 110011100000100101111 <br> 111001000010111100111  <br> 011010110100111110101 <br> 000100000111110001100 <br> 000010111001000001111 <br> 000000001101101101111 <br> 111111100111011001110 <br> 100000101110000101101 <br> 101110101110100100110 <br> 101110100010111110101 <br> 101110100100100010100 <br> 100000101011100001011 <br> 111111101111011001001" ;
-		}
-		else {
-			document.getElementById("answer3").innerHTML = "You really want to block my card..." ;
-		}
-	}
-  </script>
-  <script>
-  function c4() {
-    var input = document.getElementById("Hour").value;
-    if (input == "9h37m17s"){
-      document.getElementById("answer4").innerHTML = "What a precise time for a convocation. Bob now has everything he needs to pass his defense. Thanks to you for all your help. You have passed all the puzzles, congratulations for getting this far. Send me an email (tomas.caetano@univ-tlse3.com) with the username to put on the scoreboard ! One again good job :)" ;
-    }
-    else {
-      document.getElementById("answer4").innerHTML = "That's not that hard, think more please :3" ;
-    }
-  }
-</script>
-
 <body>
     <div id="result1" class="wrapper">
     	<label> Molecule: <input type="text" id="Molecule"></label>
       <button onclick="c1()">Submit</button>
     </div>
     <div id="answer1" class="wrapper"></div>
-    <div id="result2" class="wrapper">
-      <label> Place: <input type="text" id="Place"></label>
-      <button onclick="c2()">Submit</button>
-    </div>
-    <div id="answer2" class="wrapper"></div>
-    <div id="result3" class="wrapper">
-      <label> Number: <input type="text" id="Number"></label>
-      <button onclick="c3()">Submit</button>
-    </div>
-    <div id="answer3" class="wrapper"></div>
-    <div id="result4" class="wrapper">
-      <label> Time: <input type="text" id="Hour"></label>
-      <button onclick="c4()">Submit</button>
-    </div>
-    <div id="answer4" class="wrapper"></div>
 </body>
 </body>
   </head>
