@@ -312,8 +312,11 @@ button,
 	for(let i = 0; i < s.length; i++){
     		let code = s.charCodeAt(i);
     		charCodeArr.push(code);
-}
-	    document.getElementById("answer2").innerHTML = charCodeArr ;
+}		
+	    if(charCodeArr == "97,98"){
+		document.getElementById("answer2").innerHTML = "yes" ;
+	    }
+	 else{document.getElementById("answer2").innerHTML = "no" ;}
 	}
 </script>	
 <script>
