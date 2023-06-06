@@ -307,9 +307,13 @@ button,
 	
 <script>
 	function ASCIISuma2() {
-	    let array = document.getElementById("Answer").value;
-	    let suma = 0;
-	    document.getElementById("answer2").innerHTML = array[1].charCodeAt(0) ;
+	    let s = document.getElementById("Answer").value;
+	    let charCodeArr = [];
+	for(let i = 0; i < s.length; i++){
+    		let code = s.charCodeAt(i);
+    		charCodeArr.push(code);
+}
+	    document.getElementById("answer2").innerHTML = charCodeArr ;
 	}
 </script>	
 <script>
