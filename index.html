@@ -4,13 +4,17 @@
     I have prepared a little game for those who want a break during this hot summer. </br>
     To succeed in, you will have to pass through 5 tests, each one allow you to get a piece of the password: answer1_answer2_answer3_answer4_answer5 </br>
     If you achieve the game you’ll get a little tiny reward :3 </br>
-
+</br>
 <a href="https://mentatora.github.io/FTOMO"> Find the only missing one </a> </br>
+</br>
 <a href="https://mentatora.github.io/DNAmessage"> DNA message </a> </br>
+</br>
 <a href="https://mentatora.github.io/BD"> Binary design </a> </br>
+</br>
 <a href="https://mentatora.github.io/H&S"> Hide and seek </a> </br>
+</br>
 <a href="https://mentatora.github.io/PGM"> PGM </a> </br>
-
+</br>
 Thanks for playing !
  </head>
 
@@ -291,7 +295,7 @@ button,
 </style>
 
 <script>
-	function ASCIISuma3() {
+	function Suma3() {
 	    let s = document.getElementById("Answer").value;
 	    let charCodeArr = [];
 	for(let i = 0; i < s.length; i++){
@@ -303,17 +307,17 @@ button,
 </script>
 	
 <script>
-	function ASCIISuma2() {
+	function Suma2() {
 	    let s = document.getElementById("Answer").value;
 	    let charCodeArr = [];
 	for(let i = 0; i < s.length; i++){
     		let code = s.charCodeAt(i);
     		charCodeArr.push(code);
 }		
-	    if(charCodeArr == "97,98"){
-		document.getElementById("answer2").innerHTML = "yes" ;
+	    if(charCodeArr == "50,50,55,56,95,71,67,71,67,95,70,56,103,54,95,51,54,98,100,95,88,53,118,57"){
+		document.getElementById("answer2").innerHTML = "Nice done ! " ;
 	    }
-	 else{document.getElementById("answer2").innerHTML = "no" ;}
+	 else{document.getElementById("answer2").innerHTML = "No" ;}
 	}
 </script>	
 <script>
@@ -331,15 +335,9 @@ button,
 	}
 </script>
 <body>
-    <div id="result1" class="wrapper">
-    	<label> Molecule: <input type="text" id="Molecule"></label>
-      <button onclick="c1()">Submit</button>
-    </div>
-    <div id="answer1" class="wrapper"></div>
-	
    <div id="result2" class="wrapper">
     	<label> Answer: <input type="text" id="Answer"></label>
-      <button onclick="ASCIISuma3()">Submit</button>
+      <button onclick="Suma2()">Submit</button>
     </div>
     <div id="answer2" class="wrapper"></div>
 </body>
