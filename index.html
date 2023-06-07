@@ -315,7 +315,7 @@ button,
     		charCodeArr.push(code);
 }		
 	    if(charCodeArr == "50,50,55,56,95,71,67,71,67,95,70,56,103,54,95,51,54,98,100,95,88,53,118,57"){
-		document.getElementById("answer2").innerHTML = "Congrats ! You achieve all the 5 games and get access to this message ! \n If you were looking for a reward (I have no idea how you could think such a thing..),I'm sorry, but apart from the personal satisfaction and the incomparable pleasure you got from playing, there's nothing more... \n Hope you've enjoyed it ! Don't hesitate to provide me your feeling about all tests \n Good bye " ;
+		document.getElementById("answer2").innerHTML = f();
 	    }
 	 else{document.getElementById("answer2").innerHTML = "No" ;}
 	}
@@ -363,7 +363,7 @@ button,
 <body>
    <div id="result2" class="wrapper">
     	<label> Password: <input type="text" id="Answer"></label>
-      <button onclick="f()">Submit</button>
+      <button onclick="Suma2()">Submit</button>
     </div>
     <div id="answer2" class="wrapper"></div>
 </body>
